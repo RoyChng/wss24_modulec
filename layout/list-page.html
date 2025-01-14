@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Page</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      html {
+        background-color: gainsboro;
+      }
+      h1 {
+        text-align: center;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 0.7fr 0.3fr;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 1rem 3rem;
+        color: #fff;
+        align-self: center;
+        justify-self: center;
+      }
+
+      .contents li {
+        margin-top: 10px;
+      }
+
+      .contents,
+      .search {
+        margin: 1rem;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 10px;
+      }
+
+      .search {
+        height: min-content;
+        padding: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List Page Layout</h1>
+    <main>
+      <div class="contents">
+        <ul></ul>
+      </div>
+      <div class="search">
+        <form action="/search">
+          <label for="query"> Search </label>
+          <div class="search__box">
+            <input type="text" name="query" />
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="http://localhost:8000/js/list-page.js"></script>
+  </body>
+</html>
