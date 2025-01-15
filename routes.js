@@ -96,7 +96,7 @@ router.post("/content", async function (req, res) {
       return `<p>${data}</p>`;
     });
 
-    // Split main content with new lines and convert to HTML
+    // Join main content with new lines and convert to HTML
     mainContent = mainContent
       .join("\n")
       .replaceAll(" **", " <b>")
